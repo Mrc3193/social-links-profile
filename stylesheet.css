@@ -1,0 +1,85 @@
+/*--Design layout base (mobile 375px)--*/
+html {
+  font-size: 62.5%;
+}
+body {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  grid-template-rows: 1fr;
+  background-color: #141414;
+  font-family: "Inter", sans-serif;
+  font-size: 1.4rem;
+}
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 32.6rem;
+  height: 57.5rem;
+  background-color: #1f1f1f;
+  border-radius: 1rem;
+}
+img {
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+  display: block;
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+}
+ul {
+  padding: 0;
+}
+li {
+  margin-bottom: 1.8rem;
+  width: 27.9rem;
+  height: 4.4rem;
+  border-radius: 1rem;
+  background-color: #333333;
+  list-style-type: none;
+  text-align: center;
+}
+a {
+  display: block;
+  line-height: 4.4rem;
+  font-weight: 700;
+  text-decoration: none;
+  color: #fff;
+}
+.name {
+  font-size: 2.4rem;
+  color: #fff;
+  margin: 0;
+}
+.local {
+  color: #c5f82a;
+  font-weight: 600;
+}
+.info {
+  color: #fff;
+}
+li:hover {
+  background-color: #c5f82a;
+}
+a:hover {
+  color: black;
+}
+li:active {
+  transform: translateY(2px);
+}
+
+/*--Design layout (desktop 1440p)--*/
+
+@media screen and (min-width: 1440px) {
+  .menu {
+    width: 39.0rem;
+    height: 60.8rem;
+  }
+  li {
+    width: 30.4rem;
+  }
+  img {
+    margin-top: 4rem;
+  }
+}
